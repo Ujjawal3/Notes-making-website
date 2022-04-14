@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onenotes | Signin</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="https://kit.fontawesome.com/897ea86204.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="header">
+                <h1>login</h1>
+                <h2><%= message %></h2>
+            </div>
+            <div class="main">
+                <form action="/login" method="post">
+                    <span>
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username" name="userid">
+                    </span><br>
+                    <span>
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password">
+                    </span><br>
+                        <button>Login</button>
+                </form>
+            </div>
+			<div class="links">
+				<a href="/signup">Not Registered?Signup</a><br><br>
+				<a href="/">Return to Homepage</a>
+			</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Merriweather:wght@300&display=swap%27');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(ellipse at center, #5791d3af 0%, #3b54d2 100%);
+}
+
+.header {
+    padding: 15px;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button {
+
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.button {
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(9, 27, 83, 0.75);
+}
+
+.button {
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+.hyperlink {
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+.hyperlink a {
+    color: #f0aa06;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Merriweather';
+}
+.hyperlink a:hover{
+    color:#98e409;
+}
+
+#top {
+    justify-content: center;
+    display: flex;
+}
+
+.top {
+    margin-bottom: 20px;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 0.05vw white;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+}
+
+.top::before {
+    content: "Feel Organised, without the efforts";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 22%;
+    height: 100%;
+    color: #020a32;
+    z-index: 1;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+    word-break: break-all;
+}
+
+.title {
+    color: #f0aa06;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: 'Merriweather';
+}
+
+.header p {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.images {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.laptop {
+    width: 51%;
+}
+
+.phone {
+    width: 31%;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+.box{
+    width:300px;
+    text-align: center;
+    border:2px solid rgb(42, 2, 2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+.box .heading{
+    color:#cd5d0d;
+    font-family: 'Merriweather';
+}
+.box .content{
+    color: white;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    font-style: italic;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        width: 0%;
+    }
+
+    70% {
+        width: 102%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .top {
+        font-size: 21px;
+    }
+
+    .laptop {
+        width: 60%;
+    }
+
+    .phone {
+        width: 33%;
+    }
+
+}

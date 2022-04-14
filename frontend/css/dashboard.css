@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Rubik+Bubbles&display=swap');
+
+body {
+    height:100vh;
+    width:100%;
+    opacity: 1;
+    z-index: 0;
+    background: radial-gradient(ellipse at center, #546d8a 0%,#020a32 100%);
+}
+
+.createnew{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.notes{
+    border-radius: 5px;
+    padding-bottom: 15px;
+    padding-top: 8px;
+    margin: 20px;
+}
+.notes:nth-child(5n+1)
+{
+    background-color: rgb(197, 112, 27);
+}
+.notes:nth-child(5n+1) .card:hover {
+box-shadow: 0px 0px 5px rgb(251, 125, 0),
+0px 0px 20px rgb(251, 125, 0),
+0px 0px 60px  rgb(251, 125, 0),
+0px 0px 100px  rgb(251, 125, 0);
+}
+
+.notes:nth-child(5n+2)
+{
+    background-color: rgb(27, 165, 34);
+}
+.notes:nth-child(5n+2) .card:hover {
+    box-shadow: 0px 0px 5px rgb(8, 230, 19),
+    0px 0px 20px rgb(8, 230, 19),
+    0px 0px 60px  rgb(8, 230, 19),
+    0px 0px 100px  rgb(8, 230, 19);
+}
+
+.notes:nth-child(5n+3)
+{
+    background-color: rgb(181, 190, 20);
+}
+
+.notes:nth-child(5n+3) .card:hover {
+    box-shadow: 0px 0px 5px rgb(242, 254, 0),
+    0px 0px 20px rgb(230, 242, 4),
+    0px 0px 60px  rgb(230, 242, 4),
+    0px 0px 100px  rgb(230, 242, 4);
+}
+
+.notes:nth-child(5n+4)
+{
+    background-color: rgb(23, 176, 143);
+}
+.notes:nth-child(5n+4) .card:hover {
+    box-shadow: 0px 0px 5px rgb(3, 245, 193),
+    0px 0px 20px rgb(3, 245, 193),
+    0px 0px 60px  rgb(3, 245, 193),
+    0px 0px 100px  rgb(3, 245, 193);
+}
+
+.notes:nth-child(5n)
+{
+    background-color: rgb(142, 77, 185);
+}
+.notes:nth-child(5n) .card:hover {
+    box-shadow: 0px 0px 5px rgb(158, 28, 245),
+    0px 0px 20px rgb(158, 28, 245),
+    0px 0px 60px  rgb(158, 28, 245),
+    0px 0px 100px  rgb(158, 28, 245);
+}
+
+.card{
+    padding: 20px 30px;
+    border-radius: 5px;
+    border-bottom-left-radius: 35px;
+    cursor: pointer;
+    width:80%;
+    margin:0px auto;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px rgb(6, 6, 6);
+}
+.card:hover{
+    border:3px solid black;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    text-shadow: 5px 5px 8px rgb(84, 83, 83);
+    font-family: 'Rubik Bubbles', cursive;
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.note{
+    padding-top:15px;
+    padding-bottom: 5px;
+    font-size: 26px;
+    max-height:27px;
+    overflow:hidden;
+    width:85%;
+    font-family: 'Grape Nuts', cursive;
+    font-style: italic;
+    text-overflow: ellipsis;
+}
+
+.footer{
+    height: 3%;
+    width:100%;
+    background-color:  rgb(238, 230, 230);
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    border-top: 1px solid black;
+}
+.icon{
+    background-color: blue;
+    color:white;
+    z-index: 3;
+    position: fixed;
+    bottom: 2%;
+    left:48%;
+    text-align: center;
+    font-size: 30px;
+    border:2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    padding:0px 10px;
+    animation: buttonPulse .2s infinite ease-in-out;
+    transition: all ease-out .2s;
+}
+.icon:hover{
+    box-shadow: 0px 0px 5px blue,
+                0px 0px 20px  blue,
+                0px 0px 60px  blue,
+                0px 0px 100px  blue;
+        
+}
+
+@keyframes buttonPulse {
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (max-width:700px)
+{
+    .title{
+        font-size:23px;
+        max-height: 25px;
+    }
+    .note{
+        max-height: 60px;
+    }
+}

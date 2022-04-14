@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onenotes| Notes</title>
+    <link rel="stylesheet" href="/css/topbar2.css">
+    <link rel="stylesheet" href="/css/notes.css">
+</head>
+
+<body>
+    
+    <div class="topsection">
+        <p class="topheadline">Onenotes</p>
+        <div class="links">
+            <a href="/dashboard" class="link">DashBoard</a>
+            <a href="/logout" class="link">LogOut</a>
+        </div>
+    </div>
+    <div class="form">
+        <form action= /update/<%= index %> >
+            <textarea class="title" placeholder="Enter title here..." name="title" ><%= notes.title %></textarea>
+            <textarea name="data" class="data" placeholder=" Type your Notes here......" ><%= notes.data %></textarea>
+            <h4>Your Notes will get Auto Saved </h4>
+        </form>
+    </div>
+</body>
+
+<script src="/js/notes.js"></script>
+</html>
